@@ -16,7 +16,7 @@
       background-color:#f9f9f9;
     }
     h1,h2,h3{
-      line-height:1.2;
+      line-height:1;
     }
     .wrapper {
       margin: 0 auto;
@@ -34,8 +34,10 @@
     .horiz .curlyamp {
       display:inline-block;
       text-indent:-10000px;
-      height: 50px;
-      width: 50px;
+      height: 24px;
+      width: 24px;
+      margin-left: 10px;
+      margin-right: 10px;
       background-image: url(/curlyamp.svg);
       background-size:contain;
       background-position:center center;
@@ -51,12 +53,28 @@
     }
     .horiz .name {
       flex:0 1 auto;
-      margin-left: 0.5em;
-      margin-right: 0.5em;
       margin-bottom:5px;
       text-align:center;
       font-family: "Raleway", Helvetica, sans;
-      font-size: 40px;
+      font-size: 24px;
+    }
+    @media (min-width: 690px) {
+      .horiz .name {
+        font-size: 40px;
+      }
+      .horiz .curlyamp {
+        height: 40px;
+        width: 40px;
+      }
+    }
+    @media (min-width: 960px) {
+      .horiz .name {
+        font-size: 55px;
+      }
+      .horiz .curlyamp {
+        height: 55px;
+        width: 55px;
+      }
     }
     .topnav {
       margin-bottom: 10px;
@@ -74,11 +92,25 @@
       background-color: #ddd;
       color: black;
     }
+    h2 {
+      text-align:center;
+      font-family: "Raleway", Helvetica, sans;
+      font-size: 18px;
+      font-weight: normal;
+    }
     .center {
       text-align:center;
     }
     .raleway {
       font-family: "Raleway", Helvetica, sans;
+    }
+    .helvetica {
+      font-family: Helvetica, sans;
+    }
+    p.content {
+      font-family: Helvetica, sans;
+      font-size: 16px;
+      margin-top: 2px;
     }
   </style>
 </head>
@@ -86,6 +118,7 @@
   <div class="wrapper">
     <div class="horiz">
       <div class="container">
+        <a name="home"></a>
         <div style="order:1" class="name">
           Patricia Villalba
         </div>
@@ -98,7 +131,6 @@
       </div>
     </div>
     <!--<div class="topnav center">
-      <a href="#home" class="active">Home</a>
       <a href="#rsvp">RSVP</a>
       <a href="#events">Events</a>
       <a href="#travel">Travel</a>
@@ -108,130 +140,73 @@
       <img src="/hero.jpg" alt="Patricia Villalba and Eric Swanson" />
     </div>
     <hr>
-    <div class="center raleway">
+    <h2>
       Save the Date
-    </div>
+    </h2>
     <div class="center raleway" style="font-size: 30px">
       September 7th, 2018
     </div>
+    <hr>
+
+    <!--
+
+    <hr>
+    <a name="bio"></a>
+    <h2>
+      About Tricia and Eric
+    </h2>
+    <p class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <hr>
+    <a name="rsvp"></a>
+    <h2>
+      RSVP
+    </h2>
+    <p class="content">
+      Please RSVP <a href="#">here</a>.
+    </p>
+
+    <hr>
+    <a name="events"></a>
+    <h2>
+      Events
+    </h2>
+    <p class="content">
+      <img style="float: right; height: 170px" src="/ault-park.jpg" />
+      Wedding Ceremony with Reception to Follow<br>
+      5:00 PM, September 7, 2018<br>
+      Ault Park<br>
+      5090 Observatory Ave<br>
+      Cincinnati, OH 45208<br>
+      <a href="#">Get Directions</a><br/>
+      <a href="#">Suggest a song!</a>
+    </p>
+
+    <hr>
+    <a name="travel"></a>
+    <h2>
+      Travel
+    </h2>
+    <p class="content">
+      Hotel Capitan<br>
+      Ask about our group rate<br>
+      <br>
+      1234 Somewhere Ave<br>
+      Cincinnati, OH 45219
+    </p>
+
+    <hr>
+    <a name="gifts"></a>
+    <h2>
+      Gifts
+    </h2>
+    <p class="content">
+      We have registered with <a href="#">Amazon</a>.
+    </p>
+    -->
+
   </div>
 </body>
 </html>
-<!--
-    <div>
-      <div>
-        <div  style="">
-          <div style="font-family: &quot;MrsEavesRoman&quot;; font-weight: 400; font-style: normal; line-height: 1; text-transform: uppercase; letter-spacing: 2.5px; font-size: 18.2px; margin: 0px auto; background-color: transparent;" class="navbarContainer">
-            <div class="rmq-42f2928d navbarList"   style="position: relative;">
-              <style>
-              @media (min-width: 544px){.navbarList .nav-item-hidden{display: none !important;}}
-              </style>
-              <div style="user-select:none;" class="rmq-ccb06608 rmq-cc31ef6">
-                <div style="margin:0 10px;background-color:transparent;cursor:pointer;text-align:left;">
-                  <div style="display:flex;align-items:center;flex-direction:row;padding:5px 10px;color:#3d3d3d;fill:#3d3d3d;">
-                    <svg width="16" height="12" viewbox="0 0 16 12" style="margin-right:5px;">
-                    <rect x="0" y="0" width="16" height="2" rx="1"></rect>
-                    <rect x="0" y="5" width="16" height="2" rx="1"></rect>
-                    <rect x="0" y="10" width="16" height="2" rx="1"></rect></svg><span>Menu</span>
-                  </div>
-                </div>
-              </div>
-              <div style="padding:0;margin:0;z-index:1000;" class="rmq-6d1fed63 rmq-ac30bf28">
-                <div style="display:none;cursor:pointer;color:#3d3d3d;stroke:#3d3d3d;padding:15px 30px;border-bottom:1px solid rgba(61, 61, 61, 0.09999999999999998);" class="rmq-cc31ef6">
-                  <svg width="24" height="24" viewbox="0 0 16 16">
-                  <g stroke-width="2" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M1,1 L15,15"></path>
-                    <path d="M15,1 L1,15"></path>
-                  </g></svg>
-                </div>
-                <ul style="padding:0;margin:0;list-style:none;" class="rmq-84447459 rmq-1438268f">
-                  <li class="rmq-a57dc5c9 rmq-d9d2c89">
-                    <a href="/MIN-632-DWW/1302925/l3/" style="text-decoration:none;" class="rmq-ceabaa79">Home</a>
-                  </li>
-                  <li class="rmq-a57dc5c9 rmq-d9d2c89">
-                    <a href="/MIN-632-DWW/1302925/l3/rsvp" style="text-decoration:none;" class="rmq-ceabaa79">RSVP</a>
-                  </li>
-                  <li class="rmq-a57dc5c9 rmq-d9d2c89">
-                    <a href="/MIN-632-DWW/1302925/l3/photos" style="text-decoration:none;" class="rmq-ceabaa79">Photos</a>
-                  </li>
-                  <li class="rmq-a57dc5c9 rmq-d9d2c89">
-                    <a href="/MIN-632-DWW/1302925/l3/events" style="text-decoration:none;" class="rmq-ceabaa79">Events</a>
-                  </li>
-                  <li class="rmq-a57dc5c9 rmq-d9d2c89">
-                    <a href="/MIN-632-DWW/1302925/l3/wedding-party" style="text-decoration:none;" class="rmq-ceabaa79">Wedding Party</a>
-                  </li>
-                  <li class="rmq-a57dc5c9 rmq-d9d2c89">
-                    <a href="/MIN-632-DWW/1302925/l3/accommodations" style="text-decoration:none;" class="rmq-ceabaa79">Travel</a>
-                  </li>
-                  <li class="rmq-a57dc5c9 rmq-d9d2c89">
-                    <a href="/MIN-632-DWW/1302925/l3/registry" style="text-decoration:none;" class="rmq-ceabaa79">Gift Registry</a>
-                  </li>
-                </ul>
-                <div style="position:relative;" class="rmq-ee996e2f rmq-dcc12135 navbarDropdownWrapper">
-                  <div style="margin:0 10px;background-color:transparent;cursor:pointer;text-align:left;" class="nav-item-hidden">
-                    <div style="display:flex;align-items:center;flex-direction:row;padding:5px 10px;color:#3d3d3d;fill:#3d3d3d;">
-                      <span>More</span><svg width="10" height="6" style="margin-left:5px;" viewbox="0 0 10 6">
-                      <path d="M8.0195,0.20099 C8.2905,-0.06701 8.7285,-0.06701 8.9975,0.20099 C9.2675,0.46899 9.2695,0.90199 8.9975,1.16999 L5.0895,4.99999 C4.8195,5.26799 4.3825,5.26799 4.1105,4.99999 L0.2025,1.16999 C-0.0675,0.90299 -0.0675,0.46899 0.2025,0.20099 C0.4735,-0.06701 0.9115,-0.06701 1.1805,0.20099 L4.6015,3.34199 L8.0195,0.20099 Z"></path></svg>
-                    </div>
-                  </div>
-                  <ul style="position:absolute;padding:20px 0px 0px 0px;margin:0 10px 0 0;top:100%;right:0;width:200px;list-style:none;display:none;background-color:#fff;box-shadow:0 1px 4px rgba(0, 0, 0, 0.25);z-index:1100;"></ul>
-                </div>
-              </div>
-              <div class="erd_scroll_detection_container erd_scroll_detection_container_animation_active" style="visibility: hidden; display: inline; width: 0px; height: 0px; z-index: -1; overflow: hidden; margin: 0px; padding: 0px;">
-                <div dir="ltr" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; width: 100%; height: 100%; left: 0px; top: 0px;" class="erd_scroll_detection_container">
-                  <div class="erd_scroll_detection_container" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; left: -13px; top: -13px; right: -12px; bottom: -12px;">
-                    <div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;">
-                      <div style="position: absolute; left: 0px; top: 0px; width: 566px; height: 83px;"></div>
-                    </div>
-                    <div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;">
-                      <div style="position: absolute; width: 200%; height: 200%;"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class='gv' style="text-align:center;">
-    <h1>Eric Swanson<br>
-    +<br>
-    Patricia Villalba</h1><br>
-    <h2>September 7th, 2018</h2>
-  </div>
-  <div>
-    <div class="wrapper">
-      <div style="padding:0 15px;">
-        <img class="hero" src="/hero.jpg" alt="Eric Swanson and Patricia Villalba">
-        <div style="text-align:center;margin-bottom:30px;">
-          <div style="margin-bottom:20px;">
-            <h3 style="font-family:&quot;Futura Lt BT Light&quot;;font-weight:400;font-style:normal;line-height:1.4;text-transform:uppercase;letter-spacing:2.5px;font-size:20.8px;color:#7a6f67;margin:0;">Please join us for our wedding celebration on</h3>
-          </div><time style="font-family:&quot;Frontage Regular&quot;;font-weight:400;font-style:normal;line-height:1.4;text-transform:none;letter-spacing:-3px;font-size:19.200000000000003px;color:#7a6f67;" datetime="2018-08-01" class="rmq-7f286f4d rmq-253d8026 rmq-ba52c7ee">August 1, 2018</time>
-        </div>
-        <div style="text-align:center;margin-bottom:-50px;">
-          <div class="smallGraphic" style="display:inline-block;text-indent:-10000px;width:100px;height:100px;background-image:url(https://d3t14gfu9ehll4.cloudfront.net/themes/e98834cc-9640-4ea4-add9-7b9c431853e1/root_SmallGraphic_yesaHDp.png);background-size:contain;background-position:center center;background-repeat:no-repeat;"></div>
-        </div>
-      </div>
-    </div>
-    <div class="introContainer" style="font-family:&quot;Futura Lt BT light&quot;;font-weight:400;font-style:Normal;line-height:1.6;text-transform:none;letter-spacing:normal;font-size:16.8px;color:#7a6f67;background-color:transparent;background-image:none;background-repeat:repeat;background-position:top center;padding:80px 0;">
-      <div style="margin:0 auto;max-width:1170px;box-sizing:border-box;">
-        <div style="padding:0 15px;" class="rmq-c86bf1e3">
-          <div style="text-align:center;margin-bottom:40px;">
-            <h2 style="font-family:&quot;Frontage Regular&quot;;font-weight:400;font-style:normal;line-height:1;text-transform:none;letter-spacing:-3px;font-size:24px;color:#7a6f67;margin:0;" class="rmq-8b9719df rmq-6139dcd8 rmq-1438f977">Our Story</h2>
-          </div>
-          <div class="introText">
-            <div style="text-align:left;">
-              <div>
-                <span><span class="Linkify">Claire Johns and Jonathan Coleman met in 2009 during senior year of high school, during an Intro to Photography class. Students were assigned a project that required them to shoot architectural buildings throughout San Francisco. One afternoon, they ran into each other on the street - they were photographing the same building, just from different vantage points! - and decided to shoot together. The afternoon turned to evening and ended with ice cream, where they talked until the shop closed. And the rest, as they say, is history.</span><br></span><span><br></span><span><span class="Linkify">In November, after dinner at Little Star (where they had their first "real" date!), Jonathan Coleman surprised Claire Johns by proposing in Buena Vista Park, where they often take their dog Luna for walks.</span><br></span><span><br></span><span><span class="Linkify">They're so excited to start the next phase of their lives together and can't wait to celebrate with you in August!</span><br></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-</html>
--->
