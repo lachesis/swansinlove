@@ -112,7 +112,7 @@
     h2 {
       text-align:center;
       font-family: "Raleway", Helvetica, sans;
-      font-size: 18px;
+      font-size: 22px;
       font-weight: normal;
     }
     .center {
@@ -124,10 +124,50 @@
     .helvetica {
       font-family: Helvetica, sans;
     }
-    p.content {
+    .content {
       font-family: Helvetica, sans;
       font-size: 16px;
       margin-top: 2px;
+    }
+    a {
+      text-decoration: none;
+    }
+    @media (max-width: 690px) {
+      .flexbox-container {
+        flex-direction:column;
+      }
+    }
+    .flexbox-container {
+      display:flex;
+      width:100%;
+    }
+    .flexbox-half {
+      order: 1;
+      flex: 1;
+      padding: .5rem;
+    }
+
+
+
+    ul {
+      padding-left: 1.2em;
+    }
+    .charityinfo {
+      margin: 0;
+      line-height:1.4;
+    }
+    li.charityinfo {
+      list-style:none;
+      margin-bottom: 1em;
+    }
+    p.charityinfo {
+      font-size: 16px;
+    }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
     }
   </style>
 </head>
@@ -213,17 +253,56 @@
       1234 Somewhere Ave<br>
       Cincinnati, OH 45219
     </p>
+    -->
 
     <hr>
     <a name="gifts"></a>
     <h2>
       Gifts
     </h2>
-    <p class="content">
-      We have registered with <a href="#">Amazon</a>.
-    </p>
-    -->
+    <div class="content">
+        <p>Thank you to all of our friends and family who are visiting this page! We
+          want to give a huge appreciation to you, our guests, and say that your
+          presence on our special day is the greatest gift you can give us.
+          We have been blessed enough to already own all of the things we need and
+          most that we want.</p>
+      <div class="flexbox-container">
+        <div class="flexbox-half flexbox-left">
+          <p>We would like you to consider
+            donating to the charity of your choice. If you'd like some suggestions,
+            here are some charities that we like:</p>
+          <ul>
+            <li class="charityinfo">
+              <b>Brain &amp; Behavior Research Foundation</b><br/>
+              <p class="charityinfo">
+                Funding Cutting-Edge Research to Find Cures for Mental Illness<br/>
+                <a href="https://www.bbrfoundation.org/about">about</a>,
+                <a href="https://donate.bbrfoundation.org/civicrm/contribute/transact?reset=1&id=1">donate</a>
+              </p>
+            </li>
+            <li class="charityinfo">
+              <b>Cambridge Stroke</b><br/>
+              <p class="charityinfo">
+                Leader in clinical and experimental stroke research<br/>
+                <a href="http://www.cambridgestroke.com/index.php">about</a>,
+                <a href="http://www.cambridgestroke.com/donations.php">donate</a>
+              </p>
+            </li>
+          </ul>
+        </div>
 
+        <div class="flexbox-half flexbox-right">
+          <p>For those who would prefer to purchase a gift for us, we've
+            registered on Zola:</p>
+          <a href="https://www.zola.com/registry/swansinlove">
+            <div class="center">
+              <img style="width: 120px" src="/zola.svg"></img><br/>
+              View our Registry
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
