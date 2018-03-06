@@ -146,6 +146,16 @@
       flex: 1;
       padding: .5rem;
     }
+    .flexbox-third-1 {
+      order: 1;
+      flex: 1;
+      padding: .2rem;
+    }
+    .flexbox-third-23 {
+      order: 1;
+      flex: 4;
+      padding: .2rem;
+    }
 
 
 
@@ -178,6 +188,24 @@
     span.donatelinks {
       font-size: 14px;
     }
+    div.hotel {
+      width: 95%;
+      border: 1px solid grey;
+      padding: 2px;
+      padding-top: 10px;
+      margin: 5px;
+      margin-right: 20px;
+    }
+
+    li.poi a {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    li.poi {
+      padding-bottom: 1em;
+    }
+
   </style>
 </head>
 <body>
@@ -205,14 +233,20 @@
     <div class="hero">
       <img src="/hero.jpg" alt="Patricia Villalba and Eric Swanson" />
     </div>
+
     <hr>
     <h2>
       Save the Date
     </h2>
     <div class="center raleway" style="font-size: 30px">
-      September 7th, 2018
+      Evening of September 7th, 2018
     </div>
-    <hr>
+    <div class="center raleway">
+      Ceremony with Reception to Follow<br>
+      Ault Park Pavilion<br>
+      5090 Observatory Ave, Cincinnati, OH 45208<br>
+    </div>
+
 
     <!--
 
@@ -263,6 +297,84 @@
       Cincinnati, OH 45219
     </p>
     -->
+
+    <hr>
+    <a name="hotels"></a>
+    <h2>
+      Hotel Recommendations
+    </h2>
+    <div class="content">
+      <div class="center">
+        Because most of our guests are from Cincinnati, we did not book a group rate. Here are some hotels you might consider.
+      </div>
+
+      <div class="flexbox-container hotel">
+        <div class="flexbox-third-1">
+          <img src="hotel3.jpg" style="width:120px">
+        </div>
+        <div class="flexbox-third-23">
+          <strong>SpringHill Suites Cincinnati Midtown</strong><br>
+          14 minutes from Ault Park<br>
+          Close to Art Museum and JACK Casino<br>
+          610 Eden Park Dr, Cincinnati, OH 45202-6031<br>
+          (844) 631-0595<br><br>
+        </div>
+      </div>
+
+      <div class="flexbox-container hotel">
+        <div class="flexbox-third-1">
+          <img src="/hotel1.jpg" style="width:120px">
+        </div>
+        <div class="flexbox-third-23">
+          <strong>Best Western Premier Mariemont Inn</strong><br>
+          9 minutes from Ault Park<br>
+          6880 Wooster Pike, Cincinnati, OH 45227<br>
+          (513) 271-2100<br><br>
+        </div>
+      </div>
+
+      <div class="flexbox-container hotel">
+        <div class="flexbox-third-1">
+          <img src="hotel4.jpg" style="width:120px">
+        </div>
+        <div class="flexbox-third-23">
+          <strong>Radisson Hotel Cincinnati Riverfront</strong><br>
+          16 minutes from Ault Park<br>
+          Close to Downtown Cincinnati<br>
+          668 West 5th Street, Covington, KY 41011<br>
+          (859) 491-1200<br><br>
+        </div>
+      </div>
+
+      <div class="flexbox-container hotel">
+        <div class="flexbox-third-1">
+          <img src="hotel2.jpg" style="width:120px">
+        </div>
+        <div class="flexbox-third-23">
+          <strong>BEST WESTERN PLUS HANNAFORD INN &amp; SUITES</strong><br>
+          15 minutes from Ault Park<br>
+          5900 East Galbraith Rd, Cincinnati, OH 45236<br>
+          (800) 881-1523<br><br>
+        </div>
+      </div>
+
+    <hr>
+    <a name="poi"></a>
+    <h2>
+      Places to Visit
+    </h2>
+    <div class="content">
+      <div class="center">
+        A selection of our favorite places in Cincinnati.
+      </div>
+      <ul style="width: 90%">
+        <li class="poi"><a href="http://www.cincymuseum.org/">Cincinnati Museum Center</a><br>A former railway station, the CMC boasts famous exhibits from around the world and the children's museum where Patricia completed her undergraduate research.</li>
+        <li class="poi"><a href="http://cincinnatizoo.org/">Cincinnati Zoo</a><br>Always a fun place to visit, take the chance to say hello to their wide variety of exotic animals including Fiona the baby hippo.</li>
+        <li class="poi"><a href="https://www.newportaquarium.com/">Newport Aquarium</a><br>Surround yourself with all the fish in the sea as you stroll through the terrifying Newport Aquarium tunnel.</li>
+        <li class="poi"><a href="http://www.cincinnatiartmuseum.org/">Cincinnati Art Museum</a><br>One of Patricia's favorite places to visit and runner-up for our wedding venue. Take a stroll around their rotating art galleries or their permenant collection of Cincinnati related works.</li>
+        <li class="poi"><a href="https://en.wikipedia.org/wiki/Over-the-Rhine">Over the Rhine</a><br>Once the poorest part of Cincinnati, OTR is a new symbol of Cincinnati's revival. Check out historic buildings and delcious food and drink. <a href="http://theeagleotr.com/menu/">The Eagle</a> is particularly tasty.</li>
+        <li class="poi"><a href="http://www.freedomcenter.org/">National Underground Railroad Freedom Center</a><br>As one of the southern-most Northern cities, Cincinnati played a pivotal role in the Underground Railroad. Visit the Freedom Center to learn more.</li>
+    </div>
 
     <hr>
     <a name="gifts"></a>
@@ -316,6 +428,8 @@
         </div>
       </div>
     </div>
+
+
   </div>
 </body>
 </html>
